@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm-run-all db:generate db:migrate --parallel next:dev db:studio",
-    "next:dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+  "dev": "npm-run-all db:generate db:migrate --parallel next:dev db:studio",
+  "next:dev": "next dev --turbopack",
+  "build": "next build",
+  "start": "npm-run-all db:generate db:migrate --parallel next:start db:studio",
+  "next:start": "next start",
+  "lint": "next lint",
+  "db:generate": "drizzle-kit generate",
+  "db:migrate": "drizzle-kit migrate",
+  "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.23.2",
