@@ -9,3 +9,12 @@ You’ll learn how to:
 - Deploy your app to the web using **Vercel**
 
 Perfect for developers looking to sharpen their full-stack skills with real-world functionality.
+
+------------------------
+
+| Purpose                        | Command                                                                  |
+| ------------------------------ | ------------------------------------------------------------------------ |
+| 👨‍💻 Development (hot reload) | `npm run dev`                                                            |
+| 🏗️ Build for production       | `npm run build`                                                          |
+| 🚀 Start production server     | `npm start` (after `npm run build`, or modify script to include `build`) |
+
